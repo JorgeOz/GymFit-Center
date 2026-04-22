@@ -1,21 +1,20 @@
-# GymFit Center - Gestión de Gimnasio
+# 🏋️ GymFit Center - Gestión de Gimnasio
 
 Proyecto Intermodular de Desarrollo de Aplicaciones Multiplataforma. Actualmente en **Fase 1: Diseño y Modelado de Datos**.
 
-## 📊 Estado del Proyecto
+## 📊 Modelo Relacional
+Aquí puedes ver la arquitectura de tablas y sus relaciones:
+
+![Diagrama de Base de Datos](./design/modelo_relacional.png) 
+
+## 📈 Estado del Proyecto
 - [x] Análisis de requisitos.
-- [x] Diseño del Diagrama Entidad-Relación (DER).
+- [x] Diseño del Modelo Relacional (Arquitectura de Tablas).
 - [x] Script de creación de Base de Datos (MySQL).
 - [ ] Implementación de lógica de negocio (Java).
 - [ ] Interfaz de usuario.
 
-## 🗄️ Base de Datos
-El sistema cuenta con una arquitectura robusta para gestionar:
-* **Usuarios y Socios:** Control de accesos y perfiles.
-* **Actividades:** Gestión de clases dirigidas y horarios.
-* **Reservas:** Sistema de inscripción a actividades.
-
-## 💾 Arquitectura de Datos
+## 🗄️ Arquitectura de Persistencia
 La base de datos se ha diseñado siguiendo el modelo relacional, garantizando la integridad referencial y la escalabilidad del sistema.
 
 ### Entidades Principales:
@@ -23,5 +22,11 @@ La base de datos se ha diseñado siguiendo el modelo relacional, garantizando la
 * **Control de Acceso:** Implementación de Roles y Permisos (RBAC).
 * **Operativa:** Gestión de Actividades, Instalaciones, Horarios y Reservas.
 * **Comercial:** Sistema de Ofertas, Contratos y Promociones.
-  
-> Puedes encontrar el diagrama del modelo de datos en la carpeta `/design`.
+
+## 📁 Contenido del Repositorio
+* **`gymfit_db.sql`**: Script SQL con la creación de tablas e inserción de datos de prueba (en la carpeta /database).
+* **`modelo_relacional.mwb`**: Archivo fuente de MySQL Workbench para edición del modelo (en la carpeta /design).
+* **`nodelo_relacional.png`**: Exportación visual del modelo para consulta rápida (en la carpeta /design).
+
+---
+*Este proyecto forma parte de mi formación en el ciclo de DAM.*
