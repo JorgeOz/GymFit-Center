@@ -15,4 +15,13 @@ El sistema cuenta con una arquitectura robusta para gestionar:
 * **Actividades:** Gestión de clases dirigidas y horarios.
 * **Reservas:** Sistema de inscripción a actividades.
 
+## 💾 Arquitectura de Datos
+La base de datos se ha diseñado siguiendo el modelo relacional, garantizando la integridad referencial y la escalabilidad del sistema.
+
+### Entidades Principales:
+* **Gestión de Usuarios:** Sistema de herencia entre Usuarios, Socios y Monitores.
+* **Control de Acceso:** Implementación de Roles y Permisos (RBAC).
+* **Operativa:** Gestión de Actividades, Instalaciones, Horarios y Reservas.
+* **Comercial:** Sistema de Ofertas, Contratos y Promociones.
+  
 > Puedes encontrar el diagrama del modelo de datos en la carpeta `/design`.
