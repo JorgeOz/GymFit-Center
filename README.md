@@ -25,8 +25,8 @@ Herramientas y tecnologías previstas/utilizadas para el desarrollo del proyecto
 * **Base de Datos y Modelado:**
   * **SGBD:** MySQL
   * **Diseño:** MySQL Workbench (`.mwb`)
-* **Backend:** *(Ej: Java / Spring Boot / Hibernate)*
-* **Frontend:** *(Ej: JavaFX / Angular / React / Interfaz Web)*
+* **Backend:**
+* **Frontend:** 
 * **Control de Versiones:** Git & GitHub
 
 ---
