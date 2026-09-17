@@ -14,7 +14,6 @@ El proyecto se encuentra organizado en las siguientes carpetas principales:
 
 * **`design/`**: Contiene los diagramas del modelo relacional de la base de datos (archivo `.mwb` de MySQL Workbench y su captura en imagen).
 * **`database/`**: Contiene el script SQL con la estructura completa de la base de datos lista para ser importada.
-*(Próximamente se añadirán las carpetas de backend, frontend y documentación).*
 
 ---
 
@@ -25,8 +24,6 @@ Herramientas y tecnologías previstas/utilizadas para el desarrollo del proyecto
 * **Base de Datos y Modelado:**
   * **SGBD:** MySQL
   * **Diseño:** MySQL Workbench (`.mwb`)
-* **Backend:**
-* **Frontend:** 
 * **Control de Versiones:** Git & GitHub
 
 ---
