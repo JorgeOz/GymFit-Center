@@ -14,6 +14,7 @@ El proyecto se encuentra organizado en las siguientes carpetas principales:
 
 * **`design/`**: Contiene los diagramas del modelo relacional de la base de datos (archivo `.mwb` de MySQL Workbench y su captura en imagen).
 * **`database/`**: Contiene el script SQL con la estructura completa de la base de datos lista para ser importada.
+* **`logos/`**: Contiene el icono de la aplicación y el logo principal de la empresa.
 
 ---
 
