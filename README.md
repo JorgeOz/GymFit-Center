@@ -33,7 +33,7 @@ Herramientas y tecnologías utilizadas para el desarrollo del proyecto:
 
 ## 🗄️ Base de Datos
 
-El modelo relacional está diseñado para soportar una arquitectura multisede (`Gimnasios`), control de accesos por roles y permisos, gestión avanzada de socios, suscripciones, empleados (monitores y sus especialidades), horarios, reservas y un sistema jerárquico de métodos de pago.
+El modelo relacional está diseñado para soportar una arquitectura multisede (`Gimnasios`), control de accesos por roles y permisos, gestión avanzada de socios, suscripciones, empleados (monitores y sus especialidades), instalaciones, horarios, actividades, salas, sesiones, reservas y un sistema jerárquico de métodos de pago.
 
 ---
 
