@@ -20,11 +20,13 @@ El proyecto se encuentra organizado en las siguientes carpetas principales:
 
 ## 🛠️ Tecnologías y Stack Tecnológico
 
-Herramientas y tecnologías previstas/utilizadas para el desarrollo del proyecto:
+Herramientas y tecnologías utilizadas para el desarrollo del proyecto:
 
 * **Base de Datos y Modelado:**
   * **SGBD:** MySQL
   * **Diseño:** MySQL Workbench (`.mwb`)
+* **Aplicación de Escritorio:** .NET & C#
+* **Aplicación Móvil:** Kotlin
 * **Control de Versiones:** Git & GitHub
 
 ---
@@ -39,6 +41,6 @@ El modelo relacional está diseñado para soportar una arquitectura multisede (`
 
 - [x] Modelado de la base de datos relacional
 - [x] Creación del script de base de datos (`database/`)
-- [ ] Desarrollo del Backend
-- [ ] Desarrollo del Frontend / Interfaz de usuario
+- [ ] Desarrollo de la aplicación de escritorio
+- [ ] Desarrollo de la aplicación móvil
 - [ ] Pruebas e integración final
