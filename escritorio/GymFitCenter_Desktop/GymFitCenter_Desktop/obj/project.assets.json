@@ -408,19 +408,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\jorortvil2\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jorortvil2\\Documents\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj",
       "projectName": "GymFitCenter_Desktop",
-      "projectPath": "C:\\Users\\jorortvil2\\Documents\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj",
-      "packagesPath": "C:\\Users\\jorortvil2\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jorortvil2\\Documents\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jorortvil2\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -480,7 +480,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

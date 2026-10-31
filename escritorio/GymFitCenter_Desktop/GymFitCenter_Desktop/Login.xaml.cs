@@ -13,9 +13,9 @@ using MahApps.Metro.Controls;
 namespace GymFitCenter_Desktop
 {
     // Lógica de interacción para la ventana principal con soporte de MahApps.Metro
-    public partial class MainWindow : MetroWindow
+    public partial class Login : MetroWindow
     {
-        public MainWindow()
+        public Login()
         {
             InitializeComponent();
         }

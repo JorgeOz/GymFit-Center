@@ -1,0 +1,74 @@
+﻿<mah:MetroWindow x:Class="GymFitCenter_Desktop.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mat="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:GymFitCenter_Desktop"
+        mc:Ignorable="d"
+        Title="GymFit Center" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ShowTitleBar="False">
+        <!-- Atributos para ocultar la barra superior: ShowCloseButton="False" ShowMaxRestoreButton="False" ShowMinButton="False" -->
+
+    <!-- Fondo -->
+    <mah:MetroWindow.Background>
+        <ImageBrush ImageSource="/Recursos/gymfit-login-fondo.png" Stretch="UniformToFill"/>
+    </mah:MetroWindow.Background>
+
+    <Grid>
+
+        <!-- Dos columnas: Logo (izquierda) y Login (derecha) -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Parte Izquierda: Logo -->
+        <Grid Grid.Column="0">
+            <Image Source="/Recursos/gymfit-login-logo.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Grid>
+
+        <!-- Parte Derecha: Login -->
+        <Grid Grid.Column="1">
+
+            <!-- Tarjeta -->
+            <Border Background="#221c1c" CornerRadius="20" Padding="30" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="300" MaxWidth="500" Margin="40"
+                    Effect="{DynamicResource MaterialDesignElevationShadow}">
+
+                <!-- Stackpanel para el inicio de sesión -->
+                <StackPanel>
+
+                    <!-- Título -->
+                    <TextBlock Text="Iniciar Sesión" FontSize="24" FontWeight="Bold" FontFamily="Bahnschrift"  Foreground="White"/>
+                    <TextBlock Text="Accede al panel de gestión" FontSize="10" FontWeight="SemiBold" FontFamily="Bahnschrift"  Foreground="#898989" Margin="0, 5, 0, 0"/>
+
+                    <!-- DNI -->
+                    <TextBox x:Name="txtDNI" mat:HintAssist.Hint="DNI" mah:TextBoxHelper.ClearTextButton="True" mat:TextFieldAssist.UnderlineBrush="White"  
+                             MaxLength="9" FontSize="14" Foreground="White" FontFamily="Segoe UI" 
+                             Margin="0, 30, 0, 0" BorderBrush="White" CaretBrush="White" />
+
+                    <!-- Contraseña -->
+                    <PasswordBox x:Name="txtPassword" mat:HintAssist.Hint="Contraseña" FontSize="14" mah:PasswordBoxHelper.CapsLockWarningToolTip="Bloq Mayús activado"
+                                 mat:TextFieldAssist.UnderlineBrush="White" Foreground="White" FontFamily="Segoe UI" Margin="0, 20, 0, 0" 
+                                 BorderBrush="White" CaretBrush="White"/>
+
+                    <!-- Recuperar Contraseña -->
+                    <TextBlock HorizontalAlignment="Right" Margin="0,5,0,0" FontSize="10">
+                        <Hyperlink x:Name="lnkRecuperar" Foreground="#898989" TextDecorations="None">
+                            <Run Text="Recuperar contraseña"/>
+                        </Hyperlink>
+                    </TextBlock>
+
+                    <!-- Botón -->
+                    <Border Background="#810100" CornerRadius="20" Height="40" Margin="0,40,0,0">
+                        <Button x:Name="btn" Content="ENTRAR" IsDefault="True" FontFamily="Bahnschrift" Background="Transparent" BorderBrush="Transparent" BorderThickness="0"
+                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                    </Border>
+
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</mah:MetroWindow>
