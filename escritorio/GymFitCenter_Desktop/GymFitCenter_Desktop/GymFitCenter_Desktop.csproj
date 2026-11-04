@@ -9,16 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Recursos\gymfit-app-icon.png" />
+    <None Remove="Recursos\gymfit-center-logo.png" />
+    <None Remove="Recursos\gymfit-center-wordmark.png" />
     <None Remove="Recursos\gymfit-login-fondo.png" />
     <None Remove="Recursos\gymfit-login-logo.png" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="MahApps.Metro" Version="2.4.11" />
+    <PackageReference Include="MahApps.Metro.IconPacks" Version="6.2.1" />
     <PackageReference Include="MaterialDesignThemes.MahApps" Version="5.4.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Recursos\gymfit-app-icon.png" />
+    <Resource Include="Recursos\gymfit-center-logo.png" />
+    <Resource Include="Recursos\gymfit-center-wordmark.png" />
     <Resource Include="Recursos\gymfit-login-fondo.png" />
     <Resource Include="Recursos\gymfit-login-logo.png" />
   </ItemGroup>

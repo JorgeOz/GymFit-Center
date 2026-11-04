@@ -4,12 +4,14 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
-        xmlns:mat="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mat="http://materialdesigninxaml.net/winfx/xaml/themes"               
         xmlns:local="clr-namespace:GymFitCenter_Desktop"
         mc:Ignorable="d"
-        Title="GymFit Center" Height="450" Width="800"
+        Title="Login" Height="450" Width="800"
         WindowStartupLocation="CenterScreen"
-        ShowTitleBar="False">
+        ShowTitleBar="False"
+        Icon="/Recursos/gymfit-app-icon.png"
+        ResizeMode="NoResize">
         <!-- Atributos para ocultar la barra superior: ShowCloseButton="False" ShowMaxRestoreButton="False" ShowMinButton="False" -->
 
     <!-- Fondo -->
@@ -45,7 +47,7 @@
                     <TextBlock Text="Accede al panel de gestión" FontSize="10" FontWeight="SemiBold" FontFamily="Bahnschrift"  Foreground="#898989" Margin="0, 5, 0, 0"/>
 
                     <!-- DNI -->
-                    <TextBox x:Name="txtDNI" mat:HintAssist.Hint="DNI" mah:TextBoxHelper.ClearTextButton="True" mat:TextFieldAssist.UnderlineBrush="White"  
+                    <TextBox x:Name="txtDNI" mat:HintAssist.Hint="DNI" mat:TextFieldAssist.UnderlineBrush="White"  
                              MaxLength="9" FontSize="14" Foreground="White" FontFamily="Segoe UI" 
                              Margin="0, 30, 0, 0" BorderBrush="White" CaretBrush="White" />
 
@@ -62,10 +64,8 @@
                     </TextBlock>
 
                     <!-- Botón -->
-                    <Border Background="#810100" CornerRadius="20" Height="40" Margin="0,40,0,0">
-                        <Button x:Name="btn" Content="ENTRAR" IsDefault="True" FontFamily="Bahnschrift" Background="Transparent" BorderBrush="Transparent" BorderThickness="0"
-                                HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-                    </Border>
+                    <Button x:Name="btn" Content="ENTRAR" IsDefault="True" FontFamily="Bahnschrift" Foreground="White" Background="#810100" 
+                            BorderBrush="Transparent" BorderThickness="0" HorizontalContentAlignment="Center" Margin="0, 30, 0, 0" mat:ButtonAssist.CornerRadius="15"/>
 
                 </StackPanel>
             </Border>
