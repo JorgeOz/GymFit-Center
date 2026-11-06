@@ -65,7 +65,8 @@
 
                     <!-- Botón -->
                     <Button x:Name="btn" Content="ENTRAR" IsDefault="True" FontFamily="Bahnschrift" Foreground="White" Background="#810100" 
-                            BorderBrush="Transparent" BorderThickness="0" HorizontalContentAlignment="Center" Margin="0, 30, 0, 0" mat:ButtonAssist.CornerRadius="15"/>
+                            BorderBrush="Transparent" BorderThickness="0" HorizontalContentAlignment="Center" Margin="0, 30, 0, 0" 
+                            mat:ButtonAssist.CornerRadius="15" Click="btn_Click"/>
 
                 </StackPanel>
             </Border>

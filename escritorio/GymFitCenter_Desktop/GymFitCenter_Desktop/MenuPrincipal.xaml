@@ -11,10 +11,12 @@
         Title="GymFit Center" Height="650" Width="1100" MinHeight="500" MinWidth="800"
         WindowStartupLocation="CenterScreen">
 
+    <!-- Menú Lateral: Estilo Hamburger -->
     <mah:HamburgerMenu x:Name="menuLateral" DisplayMode="CompactInline" IsPaneOpen="False"
                        CompactPaneLength="50" OpenPaneLength="220"
-                       HamburgerWidth="50" HamburgerHeight="50">
+                       HamburgerWidth="50" HamburgerHeight="50" OptionsItemClick="menuLateral_OptionsItemClick">
 
+        <!-- Items del Menú Lateral: Secciones -->
         <mah:HamburgerMenu.ItemsSource>
             <mah:HamburgerMenuItemCollection>
                 <mah:HamburgerMenuIconItem Label="Clientes">
@@ -73,6 +75,18 @@
             </mah:HamburgerMenuItemCollection>
         </mah:HamburgerMenu.ItemsSource>
 
+        <!-- Items anclados abajo -->
+        <mah:HamburgerMenu.OptionsItemsSource>
+            <mah:HamburgerMenuItemCollection>
+                <mah:HamburgerMenuIconItem Label="Cerrar sesión">
+                    <mah:HamburgerMenuIconItem.Icon>
+                        <iconPacks:PackIconMaterial Kind="ExitToApp" Width="24" Height="24" />
+                    </mah:HamburgerMenuIconItem.Icon>
+                </mah:HamburgerMenuIconItem>
+            </mah:HamburgerMenuItemCollection>
+        </mah:HamburgerMenu.OptionsItemsSource>
+
+        <!-- Template para mostrar los iconos -->
         <mah:HamburgerMenu.ItemTemplate>
             <DataTemplate DataType="{x:Type mah:HamburgerMenuIconItem}">
                 <Grid Height="50">
@@ -91,5 +105,23 @@
             </DataTemplate>
         </mah:HamburgerMenu.ItemTemplate>
 
+        <!-- Template para mostrar los iconos de los items anclados abajo -->
+        <mah:HamburgerMenu.OptionsItemTemplate>
+            <DataTemplate DataType="{x:Type mah:HamburgerMenuIconItem}">
+                <Grid Height="50">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="50"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <ContentControl Grid.Column="0" Content="{Binding Icon}"
+                        Foreground="White" Focusable="False"
+                        HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                    <TextBlock Grid.Column="1" Text="{Binding Label}"
+                   VerticalAlignment="Center" Foreground="White" FontSize="14"/>
+                </Grid>
+            </DataTemplate>
+        </mah:HamburgerMenu.OptionsItemTemplate>
     </mah:HamburgerMenu>
 </mah:MetroWindow>

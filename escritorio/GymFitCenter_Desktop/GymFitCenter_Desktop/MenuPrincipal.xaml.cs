@@ -24,5 +24,12 @@ namespace GymFitCenter_Desktop
         {
             InitializeComponent();
         }
+
+        private void menuLateral_OptionsItemClick(object sender, ItemClickEventArgs args)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Close();
+        }
     }
 }
