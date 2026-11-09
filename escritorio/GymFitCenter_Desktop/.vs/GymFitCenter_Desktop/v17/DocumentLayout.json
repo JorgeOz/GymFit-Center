@@ -1,7 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\jorortvil2\\Documents\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{17868035-82A6-4197-AAAA-612516F87BDE}|GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj|c:\\users\\usuario\\documents\\proyectos\\gymfit-center\\escritorio\\gymfitcenter_desktop\\gymfitcenter_desktop\\menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{17868035-82A6-4197-AAAA-612516F87BDE}|GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj|solutionrelative:gymfitcenter_desktop\\menuprincipal.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,6 +55,18 @@
             {
               "$type": "Bookmark",
               "Name": "ST:2:0:{e8034f19-ab72-4f06-83fd-f6832b41aa63}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MenuPrincipal.xaml",
+              "DocumentMoniker": "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\MenuPrincipal.xaml",
+              "RelativeDocumentMoniker": "GymFitCenter_Desktop\\MenuPrincipal.xaml",
+              "ToolTip": "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\MenuPrincipal.xaml",
+              "RelativeToolTip": "GymFitCenter_Desktop\\MenuPrincipal.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-09T15:37:52.564Z",
+              "EditorCaption": ""
             }
           ]
         },
