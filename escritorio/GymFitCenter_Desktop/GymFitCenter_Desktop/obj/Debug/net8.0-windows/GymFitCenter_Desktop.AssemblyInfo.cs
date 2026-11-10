@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GymFitCenter_Desktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38288f4e1cdc5f775aba9391d1b57f5246be5c50")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c466e36a4b980a3f9d570b6264ed4861c8fa06f")]
 [assembly: System.Reflection.AssemblyProductAttribute("GymFitCenter_Desktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GymFitCenter_Desktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
