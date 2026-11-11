@@ -58,7 +58,7 @@
 
                     <!-- Recuperar Contraseña -->
                     <TextBlock HorizontalAlignment="Right" Margin="0,5,0,0" FontSize="10">
-                        <Hyperlink x:Name="lnkRecuperar" Foreground="#898989" TextDecorations="None">
+                        <Hyperlink x:Name="lnkRecuperar" Foreground="#898989" TextDecorations="None" Click="lnkCorreo_Click">
                             <Run Text="Recuperar contraseña"/>
                         </Hyperlink>
                     </TextBlock>

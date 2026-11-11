@@ -26,5 +26,12 @@ namespace GymFitCenter_Desktop
             menuPrincipal.Show();
             this.Close();
         }
+
+        private void lnkCorreo_Click(object sender, RoutedEventArgs e)
+        {
+            CorreoRecuperacion correoRecuperacion = new CorreoRecuperacion();
+            correoRecuperacion.Show();
+            this.Close();
+        }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj": {}
+    "C:\\Users\\paumayrea.EDU\\Documents\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj": {
+    "C:\\Users\\paumayrea.EDU\\Documents\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj",
+        "projectUniqueName": "C:\\Users\\paumayrea.EDU\\Documents\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj",
         "projectName": "GymFitCenter_Desktop",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\Proyectos\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\obj\\",
+        "projectPath": "C:\\Users\\paumayrea.EDU\\Documents\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\GymFitCenter_Desktop.csproj",
+        "packagesPath": "C:\\Users\\paumayrea.EDU\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\paumayrea.EDU\\Documents\\GymFit-Center\\escritorio\\GymFitCenter_Desktop\\GymFitCenter_Desktop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\paumayrea.EDU\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.318/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.315/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

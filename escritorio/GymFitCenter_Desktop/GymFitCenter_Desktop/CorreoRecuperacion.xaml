@@ -1,0 +1,65 @@
+﻿<mah:MetroWindow x:Class="GymFitCenter_Desktop.CorreoRecuperacion"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mat="http://materialdesigninxaml.net/winfx/xaml/themes"               
+        xmlns:local="clr-namespace:GymFitCenter_Desktop"
+        mc:Ignorable="d"
+        Title="Correo Recuperación" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen"
+        ShowTitleBar="False"
+        Icon="/Recursos/gymfit-app-icon.png"
+        ResizeMode="NoResize">
+        <!-- Atributos para ocultar la barra superior: ShowCloseButton="False" ShowMaxRestoreButton="False" ShowMinButton="False" -->
+
+    <!-- Fondo -->
+    <mah:MetroWindow.Background>
+        <ImageBrush ImageSource="/Recursos/gymfit-login-fondo.png" Stretch="UniformToFill"/>
+    </mah:MetroWindow.Background>
+
+    <Grid>
+
+        <!-- Dos columnas: Logo (izquierda) y Login (derecha) -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Parte Izquierda: Logo -->
+        <Grid Grid.Column="0">
+            <Image Source="/Recursos/gymfit-login-logo.png" Stretch="Uniform" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        </Grid>
+
+        <!-- Parte Derecha: Login -->
+        <Grid Grid.Column="1">
+
+            <!-- Tarjeta -->
+            <Border Background="#221c1c" CornerRadius="20" Padding="30" HorizontalAlignment="Center" VerticalAlignment="Center" MinWidth="300" MaxWidth="500" Margin="40"
+                    Effect="{DynamicResource MaterialDesignElevationShadow}">
+
+                <!-- Stackpanel para el inicio de sesión -->
+                <StackPanel>
+
+                    <!-- Título -->
+                    <TextBlock Text="Correo de Recuperación" FontSize="24" FontWeight="Bold" FontFamily="Bahnschrift"  Foreground="White"/>
+                    <TextBlock Text="Introduzca su correo electrónico" FontSize="10" FontWeight="SemiBold" FontFamily="Bahnschrift"  Foreground="#898989" Margin="0, 5, 0, 0"/>
+
+                    <!-- Correo -->
+                    <TextBox x:Name="txtCorreo" mat:HintAssist.Hint="Correo electrónico" mat:TextFieldAssist.UnderlineBrush="White"  
+                             FontSize="14" Foreground="White" FontFamily="Segoe UI" 
+                             Margin="0, 30, 0, 0" BorderBrush="White" CaretBrush="White" />
+                    <TextBlock x:Name="lblConfirmacion" Text="Revisa tu bandeja de entrada" Visibility="Collapsed" TextWrapping="Wrap" Foreground="#898989" 
+                               FontSize="10" FontWeight="SemiBold" FontFamily="Bahnschrift" Margin="0,10,0,0"/>
+
+                    <!-- Botón -->
+                    <Button x:Name="btnCorreoRecuperacion" Content="ENVIAR CORREO" IsDefault="True" FontFamily="Bahnschrift" Foreground="White" Background="#810100" 
+                            BorderBrush="Transparent" BorderThickness="0" HorizontalContentAlignment="Center" Margin="0, 30, 0, 0" Click="btnCorreoRecuperacion_Click"
+                            mat:ButtonAssist.CornerRadius="15"/>
+
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</mah:MetroWindow>
