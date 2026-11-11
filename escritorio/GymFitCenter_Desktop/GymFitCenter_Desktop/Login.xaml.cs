@@ -22,9 +22,18 @@ namespace GymFitCenter_Desktop
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
-            MenuPrincipal menuPrincipal = new MenuPrincipal();
-            menuPrincipal.Show();
-            this.Close();
+            if (string.IsNullOrEmpty(txtDNI.Text) ||
+                string.IsNullOrEmpty(txtPassword.Password))
+            {
+                MessageBox.Show("Por favor, introduzca su DNI y su contraseña.",
+                    "Error de inicio de sesión", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            else
+            {
+                MenuPrincipal menuPrincipal = new MenuPrincipal();
+                menuPrincipal.Show();
+                this.Close();
+            }
         }
     }
 }
