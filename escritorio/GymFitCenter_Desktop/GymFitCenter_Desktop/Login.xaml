@@ -48,7 +48,7 @@
 
                     <!-- DNI -->
                     <TextBox x:Name="txtDNI" mat:HintAssist.Hint="DNI" mat:TextFieldAssist.UnderlineBrush="White"  
-                             MaxLength="9" FontSize="14" Foreground="White" FontFamily="Segoe UI" 
+                             MaxLength="9" FontSize="14" Foreground="White" FontFamily="Segoe UI"                           
                              Margin="0, 30, 0, 0" BorderBrush="White" CaretBrush="White" />
 
                     <!-- Contraseña -->
