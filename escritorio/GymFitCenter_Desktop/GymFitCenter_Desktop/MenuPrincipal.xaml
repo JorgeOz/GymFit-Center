@@ -12,62 +12,63 @@
         WindowStartupLocation="CenterScreen">
 
     <!-- Menú Lateral: Estilo Hamburger -->
-    <mah:HamburgerMenu x:Name="menuLateral" DisplayMode="CompactInline" IsPaneOpen="False"
-                       CompactPaneLength="50" OpenPaneLength="220"
-                       HamburgerWidth="50" HamburgerHeight="50" OptionsItemClick="menuLateral_OptionsItemClick">
+    <mah:HamburgerMenu x:Name="menuLateral" DisplayMode="CompactInline" IsPaneOpen="False" Background="#262626"
+                       PaneBackground="#1B1B1B" CompactPaneLength="50" OpenPaneLength="220" SelectedIndex="2"
+                       HamburgerWidth="50" HamburgerHeight="50" OptionsItemClick="menuLateral_OptionsItemClick"
+                       ItemClick="menuLateral_ItemClick">
 
         <!-- Items del Menú Lateral: Secciones -->
         <mah:HamburgerMenu.ItemsSource>
             <mah:HamburgerMenuItemCollection>
-                <mah:HamburgerMenuIconItem Label="Clientes">
+                <mah:HamburgerMenuIconItem Label="Clientes" Tag="clientes">
                     <mah:HamburgerMenuIconItem.Icon>
                         <iconPacks:PackIconMaterial Kind="AccountMultiple" Width="24" Height="24" />
                     </mah:HamburgerMenuIconItem.Icon>
                 </mah:HamburgerMenuIconItem>
 
-                <mah:HamburgerMenuIconItem Label="Empleados">
+                <mah:HamburgerMenuIconItem Label="Empleados" Tag="empleados">
                     <mah:HamburgerMenuIconItem.Icon>
                         <iconPacks:PackIconMaterial Kind="AccountTie" Width="24" Height="24" />
                     </mah:HamburgerMenuIconItem.Icon>
                 </mah:HamburgerMenuIconItem>
 
-                <mah:HamburgerMenuIconItem Label="Gimnasios">
+                <mah:HamburgerMenuIconItem Label="Gimnasios" Tag="gimnasios">
                     <mah:HamburgerMenuIconItem.Icon>
                         <iconPacks:PackIconMaterial Kind="Domain" Width="24" Height="24" />
                     </mah:HamburgerMenuIconItem.Icon>
                 </mah:HamburgerMenuIconItem>
 
-                <mah:HamburgerMenuIconItem Label="Salas">
+                <mah:HamburgerMenuIconItem Label="Salas" Tag="salas">
                     <mah:HamburgerMenuIconItem.Icon>
                         <iconPacks:PackIconMaterial Kind="DoorOpen" Width="24" Height="24" />
                     </mah:HamburgerMenuIconItem.Icon>
                 </mah:HamburgerMenuIconItem>
 
-                <mah:HamburgerMenuIconItem Label="Actividades">
+                <mah:HamburgerMenuIconItem Label="Actividades" Tag="actividades">
                     <mah:HamburgerMenuIconItem.Icon>
                         <iconPacks:PackIconMaterial Kind="Dumbbell" Width="24" Height="24" />
                     </mah:HamburgerMenuIconItem.Icon>
                 </mah:HamburgerMenuIconItem>
 
-                <mah:HamburgerMenuIconItem Label="Sesiones">
+                <mah:HamburgerMenuIconItem Label="Sesiones" Tag="sesiones">
                     <mah:HamburgerMenuIconItem.Icon>
                         <iconPacks:PackIconMaterial Kind="CalendarClock" Width="24" Height="24" />
                     </mah:HamburgerMenuIconItem.Icon>
                 </mah:HamburgerMenuIconItem>
 
-                <mah:HamburgerMenuIconItem Label="Suscripciones">
+                <mah:HamburgerMenuIconItem Label="Suscripciones" Tag="suscripciones">
                     <mah:HamburgerMenuIconItem.Icon>
                         <iconPacks:PackIconMaterial Kind="CardAccountDetails" Width="24" Height="24" />
                     </mah:HamburgerMenuIconItem.Icon>
                 </mah:HamburgerMenuIconItem>
 
-                <mah:HamburgerMenuIconItem Label="Bonos">
+                <mah:HamburgerMenuIconItem Label="Bonos" Tag="bonos">
                     <mah:HamburgerMenuIconItem.Icon>
                         <iconPacks:PackIconMaterial Kind="Ticket" Width="24" Height="24" />
                     </mah:HamburgerMenuIconItem.Icon>
                 </mah:HamburgerMenuIconItem>
 
-                <mah:HamburgerMenuIconItem Label="Facturación">
+                <mah:HamburgerMenuIconItem Label="Facturación" Tag="facturacion">
                     <mah:HamburgerMenuIconItem.Icon>
                         <iconPacks:PackIconMaterial Kind="ReceiptText" Width="24" Height="24" />
                     </mah:HamburgerMenuIconItem.Icon>
@@ -123,5 +124,10 @@
                 </Grid>
             </DataTemplate>
         </mah:HamburgerMenu.OptionsItemTemplate>
+
+        <!-- Contenido de la derecha -->
+        <mah:HamburgerMenu.Content>
+            <local:GimnasiosView/>
+        </mah:HamburgerMenu.Content>
     </mah:HamburgerMenu>
 </mah:MetroWindow>

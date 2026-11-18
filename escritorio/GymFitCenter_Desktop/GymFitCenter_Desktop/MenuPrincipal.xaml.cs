@@ -31,5 +31,24 @@ namespace GymFitCenter_Desktop
             login.Show();
             this.Close();
         }
+
+        private void menuLateral_ItemClick(object sender, ItemClickEventArgs evento)
+        {
+            var item = evento.ClickedItem as HamburgerMenuIconItem;
+            if (item == null) return;
+
+            switch (item.Tag?.ToString())
+            {
+                case "clientes":
+                    menuLateral.Content = new ClientesView();
+                    break;
+                case "gimnasios":
+                    menuLateral.Content = new GimnasiosView();
+                    break;
+                default:
+                    menuLateral.Content = null;
+                    break;
+            }
+        }
     }
 }
