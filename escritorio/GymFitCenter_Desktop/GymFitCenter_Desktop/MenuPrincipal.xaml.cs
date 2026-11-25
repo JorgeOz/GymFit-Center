@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
+using MahApps.Metro.Controls.Dialogs;
 
 namespace GymFitCenter_Desktop
 {
@@ -25,11 +26,21 @@ namespace GymFitCenter_Desktop
             InitializeComponent();
         }
 
-        private void menuLateral_OptionsItemClick(object sender, ItemClickEventArgs args)
+        private async void menuLateral_OptionsItemClick(object sender, ItemClickEventArgs args)
         {
-            Login login = new Login();
-            login.Show();
-            this.Close();
+            var confirmarCierre = await this.ShowMessageAsync("Confirmación", "¿Está seguro de que desea cerrar sesión?", MessageDialogStyle.AffirmativeAndNegative);
+
+            if (confirmarCierre != MessageDialogResult.Affirmative)
+            {
+                menuLateral.SelectedOptionsIndex = -1;
+                return;
+            }
+            else
+            {
+                Login login = new Login();
+                login.Show();
+                this.Close();
+            }
         }
 
         private void menuLateral_ItemClick(object sender, ItemClickEventArgs evento)

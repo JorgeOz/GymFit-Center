@@ -9,6 +9,7 @@
         xmlns:local="clr-namespace:GymFitCenter_Desktop"
         mc:Ignorable="d"
         Title="GymFit Center" Height="650" Width="1100" MinHeight="500" MinWidth="800"
+        Icon="/Recursos/gymfit-app-icon.png"         
         WindowStartupLocation="CenterScreen">
 
     <!-- Menú Lateral: Estilo Hamburger -->

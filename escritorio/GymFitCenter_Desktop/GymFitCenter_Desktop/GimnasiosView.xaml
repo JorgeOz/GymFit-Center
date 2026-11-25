@@ -20,6 +20,7 @@
             <Setter Property="Margin" Value="10"/>
             <Setter Property="Cursor" Value="Hand"/>
             <Setter Property="Effect" Value="{DynamicResource MaterialDesignElevationShadow}"/>
+            <EventSetter Event="MouseLeftButtonUp" Handler="Tarjeta_Click"/>
         </Style>
     </UserControl.Resources>
 

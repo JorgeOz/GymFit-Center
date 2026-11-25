@@ -1,0 +1,87 @@
+﻿<mah:MetroWindow x:Class="GymFitCenter_Desktop.GimnasioDetalle"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:mat="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
+        xmlns:local="clr-namespace:GymFitCenter_Desktop"
+        mc:Ignorable="d"
+        Title="Gimnasio" Width="480" Height="420"
+        ResizeMode="NoResize" ShowInTaskbar="False"
+        WindowStartupLocation="CenterOwner"
+        ShowTitleBar="False"         
+        Icon="/Recursos/gymfit-app-icon.png"
+        Background="#221c1c">
+
+    <mah:MetroWindow.Resources>
+        <!-- Estilo compartido -->
+        <Style x:Key="CampoGimnasio" TargetType="TextBox" BasedOn="{StaticResource MaterialDesignFloatingHintTextBox}">
+            <Setter Property="mat:HintAssist.IsFloating" Value="True"/>
+            <Setter Property="mat:TextFieldAssist.UnderlineBrush" Value="White"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="BorderBrush" Value="White"/>
+            <Setter Property="CaretBrush" Value="White"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Margin" Value="0,20,0,0"/>
+        </Style>
+    </mah:MetroWindow.Resources>
+
+    <Grid Margin="30">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Cabecera -->
+        <StackPanel Grid.Row="0">
+            <TextBlock Text="Editar gimnasio" FontSize="24" FontWeight="Bold"
+                       FontFamily="Bahnschrift" Foreground="White"/>
+            <TextBlock Text="Modifica los datos del centro" FontSize="11" FontWeight="SemiBold"
+                       FontFamily="Bahnschrift" Foreground="#898989" Margin="0,5,0,0"/>
+        </StackPanel>
+
+        <!-- Campos -->
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="0,5,0,10">
+            <StackPanel>
+                <TextBox x:Name="txtNombre" mat:HintAssist.Hint="Nombre"
+                         Text="GymFit Center Paterna" Style="{StaticResource CampoGimnasio}"/>
+                <TextBox x:Name="txtCiudad" mat:HintAssist.Hint="Ciudad"
+                         Text="Paterna" Style="{StaticResource CampoGimnasio}"/>
+                <TextBox x:Name="txtDireccion" mat:HintAssist.Hint="Dirección"
+                         Text="Calle Ciudad de Sevilla, 28" Style="{StaticResource CampoGimnasio}"/>
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- Botones -->
+        <Grid Grid.Row="2" Margin="0,10,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Eliminar -->
+            <Button x:Name="btnEliminar" Click="btnEliminar_Click" Grid.Column="0" HorizontalAlignment="Left" Height="40" Padding="16,0"
+                    Background="Transparent" Foreground="#E53935" BorderBrush="#E53935" BorderThickness="1"
+                    FontFamily="Bahnschrift" mat:ButtonAssist.CornerRadius="15">
+                <StackPanel Orientation="Horizontal">
+                    <iconPacks:PackIconMaterial Kind="Delete" Width="14" Height="14" VerticalAlignment="Center"/>
+                    <TextBlock Text="ELIMINAR" Margin="8,0,0,0" VerticalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+
+            <!-- Cancelar y Guardar -->
+            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <Button x:Name="btnCancelar" Content="CANCELAR" IsCancel="True" Height="40" Padding="20,0"
+                        Background="Transparent" Foreground="White" BorderBrush="#898989" BorderThickness="1"
+                        FontFamily="Bahnschrift" mat:ButtonAssist.CornerRadius="15"/>
+                <Button x:Name="btnGuardar" Content="GUARDAR CAMBIOS" Height="40" Padding="20,0" Margin="10,0,0,0"
+                        Background="#810100" Foreground="White" BorderBrush="Transparent" BorderThickness="0"
+                        FontFamily="Bahnschrift" mat:ButtonAssist.CornerRadius="15"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</mah:MetroWindow>

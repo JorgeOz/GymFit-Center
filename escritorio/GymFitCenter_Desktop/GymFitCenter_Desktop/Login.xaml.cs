@@ -9,6 +9,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
+using System.Text.RegularExpressions;
 
 namespace GymFitCenter_Desktop
 {
@@ -22,17 +23,40 @@ namespace GymFitCenter_Desktop
 
         private void btn_Click(object sender, RoutedEventArgs e)
         {
-            if (string.IsNullOrEmpty(txtDNI.Text) ||
-                string.IsNullOrEmpty(txtPassword.Password))
+            string dni = txtDNI.Text.Trim().ToUpper();
+
+            if (string.IsNullOrEmpty(dni) || string.IsNullOrEmpty(txtPassword.Password))
             {
                 MessageBox.Show("Por favor, introduzca su DNI y su contraseña.",
                     "Error de inicio de sesión", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+
+            if (!DniValido(dni))
+            {
+                MessageBox.Show("El DNI no es válido.",
+                    "Error de inicio de sesión", MessageBoxButton.OK, MessageBoxImage.Error);
+                txtDNI.Focus();
+                return;
+            }
+
+            // Aquí irá la comprobación contra la BD
+            MenuPrincipal menuPrincipal = new MenuPrincipal();
+            menuPrincipal.Show();
+            this.Close();
+        }
+
+        private bool DniValido(string dni)
+        {
+            if (!Regex.IsMatch(dni, @"^\d{8}[A-Z]$"))
+            {
+                return false;
             }
             else
             {
-                MenuPrincipal menuPrincipal = new MenuPrincipal();
-                menuPrincipal.Show();
-                this.Close();
+                const string letras = "TRWAGMYFPDXBNJZSQVHLCKE";
+                int numero = int.Parse(dni.Substring(0, 8));
+                return dni[8] == letras[numero % 23];
             }
         }
 

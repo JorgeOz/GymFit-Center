@@ -24,5 +24,13 @@ namespace GymFitCenter_Desktop
         {
             InitializeComponent();
         }
+
+        private void Tarjeta_Click(object sender, MouseButtonEventArgs e)
+        {
+            // TODO: sustituir por datos reales (pasar el gimnasio pulsado a GimnasioDetalle)
+            GimnasioDetalle detalle = new GimnasioDetalle();
+            detalle.Owner = Window.GetWindow(this);
+            detalle.ShowDialog();
+        }
     }
 }
