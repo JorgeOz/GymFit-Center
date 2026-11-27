@@ -9,6 +9,7 @@
              xmlns:local="clr-namespace:GymFitCenter_Desktop"
              mc:Ignorable="d"
              d:DesignHeight="450" d:DesignWidth="800">
+    
     <UserControl.Resources>
         <!-- Estilo compartido por todas las tarjetas -->
         <Style x:Key="TarjetaCliente"
@@ -86,14 +87,14 @@
             <!-- WrapPanel para que salte a la siguiente línea cuando se llene. (Por si en un futuro se quieren añadir más gimnasios)-->
             <WrapPanel Orientation="Horizontal">
 
-                <Border Style="{StaticResource TarjetaGimnasio}">
+                <Border Style="{StaticResource TarjetaCliente}">
                     <StackPanel>
-                        <iconPacks:PackIconMaterial Kind="Domain"
+                        <iconPacks:PackIconMaterial Kind="AccountTie"
                                                     Width="28"
                                                     Height="28"
                                                     Foreground="#810100"
                                                     HorizontalAlignment="Left" />
-                        <TextBlock Text="GymFit Center Paterna"
+                        <TextBlock Text="Cbum"
                                    FontSize="18"
                                    FontWeight="Bold"
                                    FontFamily="Bahnschrift"
@@ -128,14 +129,14 @@
                     </StackPanel>
                 </Border>
 
-                <Border Style="{StaticResource TarjetaGimnasio}">
+                <Border Style="{StaticResource TarjetaCliente}">
                     <StackPanel>
-                        <iconPacks:PackIconMaterial Kind="Domain"
+                        <iconPacks:PackIconMaterial Kind="Account"
                                                     Width="28"
                                                     Height="28"
                                                     Foreground="#810100"
                                                     HorizontalAlignment="Left" />
-                        <TextBlock Text="GymFit Center Valencia"
+                        <TextBlock Text="David Laid"
                                    FontSize="18"
                                    FontWeight="Bold"
                                    FontFamily="Bahnschrift"
@@ -170,14 +171,14 @@
                     </StackPanel>
                 </Border>
 
-                <Border Style="{StaticResource TarjetaGimnasio}">
+                <Border Style="{StaticResource TarjetaCliente}">
                     <StackPanel>
-                        <iconPacks:PackIconMaterial Kind="Domain"
+                        <iconPacks:PackIconMaterial Kind="Account"
                                                     Width="28"
                                                     Height="28"
                                                     Foreground="#810100"
                                                     HorizontalAlignment="Left" />
-                        <TextBlock Text="GymFit Center Torrente"
+                        <TextBlock Text="Localix"
                                    FontSize="18"
                                    FontWeight="Bold"
                                    FontFamily="Bahnschrift"
@@ -212,14 +213,14 @@
                     </StackPanel>
                 </Border>
 
-                <Border Style="{StaticResource TarjetaGimnasio}">
+                <Border Style="{StaticResource TarjetaCliente}">
                     <StackPanel>
-                        <iconPacks:PackIconMaterial Kind="Domain"
+                        <iconPacks:PackIconMaterial Kind="Account"
                                                     Width="28"
                                                     Height="28"
                                                     Foreground="#810100"
                                                     HorizontalAlignment="Left" />
-                        <TextBlock Text="GymFit Center Mislata"
+                        <TextBlock Text="Oz"
                                    FontSize="18"
                                    FontWeight="Bold"
                                    FontFamily="Bahnschrift"
