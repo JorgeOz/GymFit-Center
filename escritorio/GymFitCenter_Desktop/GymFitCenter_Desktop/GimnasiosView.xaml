@@ -8,114 +8,250 @@
              xmlns:iconPacks="http://metro.mahapps.com/winfx/xaml/iconpacks"
              xmlns:local="clr-namespace:GymFitCenter_Desktop"
              mc:Ignorable="d"
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450"
+             d:DesignWidth="800">
 
     <UserControl.Resources>
         <!-- Estilo compartido por todas las tarjetas -->
-        <Style x:Key="TarjetaGimnasio" TargetType="Border">
-            <Setter Property="Background" Value="#221c1c"/>
-            <Setter Property="CornerRadius" Value="20"/>
-            <Setter Property="Padding" Value="20"/>
-            <Setter Property="Width" Value="280"/>
-            <Setter Property="Margin" Value="10"/>
-            <Setter Property="Cursor" Value="Hand"/>
-            <Setter Property="Effect" Value="{DynamicResource MaterialDesignElevationShadow}"/>
-            <EventSetter Event="MouseLeftButtonUp" Handler="Tarjeta_Click"/>
+        <Style x:Key="TarjetaGimnasio"
+               TargetType="Border">
+            <Setter Property="Background"
+                    Value="#221c1c" />
+            <Setter Property="CornerRadius"
+                    Value="20" />
+            <Setter Property="Padding"
+                    Value="20" />
+            <Setter Property="Width"
+                    Value="280" />
+            <Setter Property="Margin"
+                    Value="10" />
+            <Setter Property="Cursor"
+                    Value="Hand" />
+            <Setter Property="Effect"
+                    Value="{DynamicResource MaterialDesignElevationShadow}" />
+            <EventSetter Event="MouseLeftButtonUp"
+                         Handler="Tarjeta_Click" />
         </Style>
     </UserControl.Resources>
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <!-- Barra superior: título y botón de alta -->
-        <Grid Grid.Row="0" Margin="30, 30, 30, 0">
+        <Grid Grid.Row="0"
+              Margin="30, 30, 30, 0">
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
             </Grid.ColumnDefinitions>
 
             <Grid Grid.Column="0">
-                <TextBlock Text="Gimnasios" FontSize="26" FontWeight="Bold"
-                       FontFamily="Bahnschrift" Foreground="White" VerticalAlignment="Center"/>
+                <TextBlock Text="Gimnasios"
+                           FontSize="26"
+                           FontWeight="Bold"
+                           FontFamily="Bahnschrift"
+                           Foreground="White"
+                           VerticalAlignment="Center" />
             </Grid>
 
             <Grid Grid.Column="1">
-                <Button Grid.Column="1" Height="40" Padding="20,0" Background="#810100" Foreground="White"
-                    BorderBrush="Transparent" BorderThickness="0" FontFamily="Bahnschrift"
-                    mat:ButtonAssist.CornerRadius="15">
+                <Button Grid.Column="1"
+                        Height="40"
+                        Padding="20,0"
+                        Background="#810100"
+                        Foreground="White"
+                        BorderBrush="Transparent"
+                        BorderThickness="0"
+                        FontFamily="Bahnschrift"
+                        mat:ButtonAssist.CornerRadius="15">
                     <StackPanel Orientation="Horizontal">
-                        <iconPacks:PackIconMaterial Kind="Plus" Width="14" Height="14" VerticalAlignment="Center"/>
-                        <TextBlock Text="NUEVO GIMNASIO" Margin="10,0,0,0" VerticalAlignment="Center"/>
+                        <iconPacks:PackIconMaterial Kind="Plus"
+                                                    Width="14"
+                                                    Height="14"
+                                                    VerticalAlignment="Center" />
+                        <TextBlock Text="NUEVO GIMNASIO"
+                                   Margin="10,0,0,0"
+                                   VerticalAlignment="Center" />
                     </StackPanel>
                 </Button>
             </Grid>
         </Grid>
 
         <!-- Listado de tarjetas -->
-        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="20,20,20,20">
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto"
+                      Margin="20,20,20,20">
 
             <!-- WrapPanel para que salte a la siguiente línea cuando se llene. (Por si en un futuro se quieren añadir más gimnasios)-->
             <WrapPanel Orientation="Horizontal">
 
                 <Border Style="{StaticResource TarjetaGimnasio}">
                     <StackPanel>
-                        <iconPacks:PackIconMaterial Kind="Domain" Width="28" Height="28" Foreground="#810100" HorizontalAlignment="Left"/>
-                        <TextBlock Text="GymFit Center Paterna" FontSize="18" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="White" Margin="0,10,0,0"/>
-                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
-                            <iconPacks:PackIconMaterial Kind="City" Width="14" Height="14" Foreground="#898989" VerticalAlignment="Center"/>
-                            <TextBlock Text="Paterna" FontSize="12" FontFamily="Segoe UI" Foreground="#898989" Margin="8,0,0,0"/>
+                        <iconPacks:PackIconMaterial Kind="Domain"
+                                                    Width="28"
+                                                    Height="28"
+                                                    Foreground="#810100"
+                                                    HorizontalAlignment="Left" />
+                        <TextBlock Text="GymFit Center Paterna"
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   FontFamily="Bahnschrift"
+                                   Foreground="White"
+                                   Margin="0,10,0,0" />
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,8,0,0">
+                            <iconPacks:PackIconMaterial Kind="City"
+                                                        Width="14"
+                                                        Height="14"
+                                                        Foreground="#898989"
+                                                        VerticalAlignment="Center" />
+                            <TextBlock Text="Paterna"
+                                       FontSize="12"
+                                       FontFamily="Segoe UI"
+                                       Foreground="#898989"
+                                       Margin="8,0,0,0" />
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
-                            <iconPacks:PackIconMaterial Kind="MapMarker" Width="14" Height="14" Foreground="#898989" VerticalAlignment="Center"/>
-                            <TextBlock Text="Calle Ciudad de Sevilla, 28" FontSize="12" FontFamily="Segoe UI" Foreground="#898989" Margin="8,0,0,0"/>
-                        </StackPanel>
-                    </StackPanel>
-                </Border>
-
-                <Border Style="{StaticResource TarjetaGimnasio}">
-                    <StackPanel>
-                        <iconPacks:PackIconMaterial Kind="Domain" Width="28" Height="28" Foreground="#810100" HorizontalAlignment="Left"/>
-                        <TextBlock Text="GymFit Center Valencia" FontSize="18" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="White" Margin="0,10,0,0"/>
-                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
-                            <iconPacks:PackIconMaterial Kind="City" Width="14" Height="14" Foreground="#898989" VerticalAlignment="Center"/>
-                            <TextBlock Text="Valencia" FontSize="12" FontFamily="Segoe UI" Foreground="#898989" Margin="8,0,0,0"/>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
-                            <iconPacks:PackIconMaterial Kind="MapMarker" Width="14" Height="14" Foreground="#898989" VerticalAlignment="Center"/>
-                            <TextBlock Text="Avenida del Cid, 112" FontSize="12" FontFamily="Segoe UI" Foreground="#898989" Margin="8,0,0,0"/>
-                        </StackPanel>
-                    </StackPanel>
-                </Border>
-
-                <Border Style="{StaticResource TarjetaGimnasio}">
-                    <StackPanel>
-                        <iconPacks:PackIconMaterial Kind="Domain" Width="28" Height="28" Foreground="#810100" HorizontalAlignment="Left"/>
-                        <TextBlock Text="GymFit Center Torrente" FontSize="18" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="White" Margin="0,10,0,0"/>
-                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
-                            <iconPacks:PackIconMaterial Kind="City" Width="14" Height="14" Foreground="#898989" VerticalAlignment="Center"/>
-                            <TextBlock Text="Torrente" FontSize="12" FontFamily="Segoe UI" Foreground="#898989" Margin="8,0,0,0"/>
-                        </StackPanel>
-                        <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
-                            <iconPacks:PackIconMaterial Kind="MapMarker" Width="14" Height="14" Foreground="#898989" VerticalAlignment="Center"/>
-                            <TextBlock Text="Calle Picaña, 49" FontSize="12" FontFamily="Segoe UI" Foreground="#898989" Margin="8,0,0,0"/>
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,4,0,0">
+                            <iconPacks:PackIconMaterial Kind="MapMarker"
+                                                        Width="14"
+                                                        Height="14"
+                                                        Foreground="#898989"
+                                                        VerticalAlignment="Center" />
+                            <TextBlock Text="Calle Ciudad de Sevilla, 28"
+                                       FontSize="12"
+                                       FontFamily="Segoe UI"
+                                       Foreground="#898989"
+                                       Margin="8,0,0,0" />
                         </StackPanel>
                     </StackPanel>
                 </Border>
 
                 <Border Style="{StaticResource TarjetaGimnasio}">
                     <StackPanel>
-                        <iconPacks:PackIconMaterial Kind="Domain" Width="28" Height="28" Foreground="#810100" HorizontalAlignment="Left"/>
-                        <TextBlock Text="GymFit Center Mislata" FontSize="18" FontWeight="Bold" FontFamily="Bahnschrift" Foreground="White" Margin="0,10,0,0"/>
-                        <StackPanel Orientation="Horizontal" Margin="0,8,0,0">
-                            <iconPacks:PackIconMaterial Kind="City" Width="14" Height="14" Foreground="#898989" VerticalAlignment="Center"/>
-                            <TextBlock Text="Mislata" FontSize="12" FontFamily="Segoe UI" Foreground="#898989" Margin="8,0,0,0"/>
+                        <iconPacks:PackIconMaterial Kind="Domain"
+                                                    Width="28"
+                                                    Height="28"
+                                                    Foreground="#810100"
+                                                    HorizontalAlignment="Left" />
+                        <TextBlock Text="GymFit Center Valencia"
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   FontFamily="Bahnschrift"
+                                   Foreground="White"
+                                   Margin="0,10,0,0" />
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,8,0,0">
+                            <iconPacks:PackIconMaterial Kind="City"
+                                                        Width="14"
+                                                        Height="14"
+                                                        Foreground="#898989"
+                                                        VerticalAlignment="Center" />
+                            <TextBlock Text="Valencia"
+                                       FontSize="12"
+                                       FontFamily="Segoe UI"
+                                       Foreground="#898989"
+                                       Margin="8,0,0,0" />
                         </StackPanel>
-                        <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
-                            <iconPacks:PackIconMaterial Kind="MapMarker" Width="14" Height="14" Foreground="#898989" VerticalAlignment="Center"/>
-                            <TextBlock Text="Calle de Ernesto Che Guevara, 4" FontSize="12" FontFamily="Segoe UI" Foreground="#898989" Margin="8,0,0,0"/>
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,4,0,0">
+                            <iconPacks:PackIconMaterial Kind="MapMarker"
+                                                        Width="14"
+                                                        Height="14"
+                                                        Foreground="#898989"
+                                                        VerticalAlignment="Center" />
+                            <TextBlock Text="Avenida del Cid, 112"
+                                       FontSize="12"
+                                       FontFamily="Segoe UI"
+                                       Foreground="#898989"
+                                       Margin="8,0,0,0" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource TarjetaGimnasio}">
+                    <StackPanel>
+                        <iconPacks:PackIconMaterial Kind="Domain"
+                                                    Width="28"
+                                                    Height="28"
+                                                    Foreground="#810100"
+                                                    HorizontalAlignment="Left" />
+                        <TextBlock Text="GymFit Center Torrente"
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   FontFamily="Bahnschrift"
+                                   Foreground="White"
+                                   Margin="0,10,0,0" />
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,8,0,0">
+                            <iconPacks:PackIconMaterial Kind="City"
+                                                        Width="14"
+                                                        Height="14"
+                                                        Foreground="#898989"
+                                                        VerticalAlignment="Center" />
+                            <TextBlock Text="Torrente"
+                                       FontSize="12"
+                                       FontFamily="Segoe UI"
+                                       Foreground="#898989"
+                                       Margin="8,0,0,0" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,4,0,0">
+                            <iconPacks:PackIconMaterial Kind="MapMarker"
+                                                        Width="14"
+                                                        Height="14"
+                                                        Foreground="#898989"
+                                                        VerticalAlignment="Center" />
+                            <TextBlock Text="Calle Picaña, 49"
+                                       FontSize="12"
+                                       FontFamily="Segoe UI"
+                                       Foreground="#898989"
+                                       Margin="8,0,0,0" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource TarjetaGimnasio}">
+                    <StackPanel>
+                        <iconPacks:PackIconMaterial Kind="Domain"
+                                                    Width="28"
+                                                    Height="28"
+                                                    Foreground="#810100"
+                                                    HorizontalAlignment="Left" />
+                        <TextBlock Text="GymFit Center Mislata"
+                                   FontSize="18"
+                                   FontWeight="Bold"
+                                   FontFamily="Bahnschrift"
+                                   Foreground="White"
+                                   Margin="0,10,0,0" />
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,8,0,0">
+                            <iconPacks:PackIconMaterial Kind="City"
+                                                        Width="14"
+                                                        Height="14"
+                                                        Foreground="#898989"
+                                                        VerticalAlignment="Center" />
+                            <TextBlock Text="Mislata"
+                                       FontSize="12"
+                                       FontFamily="Segoe UI"
+                                       Foreground="#898989"
+                                       Margin="8,0,0,0" />
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,4,0,0">
+                            <iconPacks:PackIconMaterial Kind="MapMarker"
+                                                        Width="14"
+                                                        Height="14"
+                                                        Foreground="#898989"
+                                                        VerticalAlignment="Center" />
+                            <TextBlock Text="Calle de Ernesto Che Guevara, 4"
+                                       FontSize="12"
+                                       FontFamily="Segoe UI"
+                                       Foreground="#898989"
+                                       Margin="8,0,0,0" />
                         </StackPanel>
                     </StackPanel>
                 </Border>
