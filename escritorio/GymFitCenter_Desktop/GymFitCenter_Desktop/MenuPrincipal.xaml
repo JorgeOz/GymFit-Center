@@ -14,7 +14,7 @@
 
     <!-- Menú Lateral: Estilo Hamburger -->
     <mah:HamburgerMenu x:Name="menuLateral" DisplayMode="CompactInline" IsPaneOpen="False" Background="#262626"
-                       PaneBackground="#1B1B1B" CompactPaneLength="50" OpenPaneLength="220" SelectedIndex="2"
+                       PaneBackground="#1B1B1B" CompactPaneLength="50" OpenPaneLength="220" SelectedIndex="0"
                        HamburgerWidth="50" HamburgerHeight="50" OptionsItemClick="menuLateral_OptionsItemClick"
                        ItemClick="menuLateral_ItemClick">
 
@@ -128,7 +128,7 @@
 
         <!-- Contenido de la derecha -->
         <mah:HamburgerMenu.Content>
-            <local:GimnasiosView/>
+            <local:ClientesView/>
         </mah:HamburgerMenu.Content>
     </mah:HamburgerMenu>
 </mah:MetroWindow>
